@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.css">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="header">
+				<span></span>
+				服务
+				<span><i class="iconfont">？</i></span>
+			</div>
+		</header>
+		<section>
+			<div class="section">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="images/banner_02.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/banner_02.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/banner_02.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/banner_02.jpg" alt=""></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="content">
+					<h2><span>我的服务</span></h2>
+					<ul>
+						<li><i class="iconfont">&#xe6b7;</i>场景审核</li>
+						<li><i class="iconfont">&#xe67f;</i>去尾页</li>
+						<li><i class="iconfont">&#xe68e;</i>短信推广</li>
+						<li class="last"><i class="iconfont">&#xe662;</i>保障服务</li>
+						<li><i class="iconfont">&#xe672;</i>红人点点</li>
+						<li><i class="iconfont">&#xe67d;</i>秀场推广</li>
+						<li></li>
+						<li class="last"></li>
+					</ul>
+				</div>
+				<div class="content">
+					<h2><span>场景相关</span></h2>
+					<ul>
+						<li><i class="iconfont">&#xe680;</i>我的场景</li>
+						<li><i class="iconfont">&#xe6f8;</i>子账号场景</li>
+						<li><i class="iconfont">&#xe6b6;</i>字体商城</li>
+						<li class="last"></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer">
+				<ul>
+					<li class="bg"><i class="iconfont">&#xe69f;</i>创作</li>
+					<li><i class="iconfont">&#xe6a4;</i>服务</li>
+					<li><i class="iconfont">&#xe647;</i>我的</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script src='js/swiper.js'></script>
+	<script>
+		document.documentElement.style.fontSize = window.innerWidth/3.75+ 'px';
+		window.onresize=function(){
+			document.documentElement.style.fontSize = window.innerWidth/3.75+ 'px';
+		}
+		new Swiper('.swiper-container',{
+			loop:true,
+			autoplay:1000,
+			speed:1500,
+			pagination:'.swiper-pagination'
+		})
+	</script>
+</body>
+</html>
